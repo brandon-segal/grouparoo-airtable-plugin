@@ -1,0 +1,42 @@
+{
+  "name": "@bsegal/grouparoo-airtable-plugin",
+  "version": "0.0.0-development",
+  "description": "Plugin for Grouparoo to add Airtable as a destination",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "license": "UNLICENSED",
+  "types": "types",
+  "files": [
+    "cjs",
+    "esm",
+    "types",
+    "src"
+  ],
+  "scripts": {
+    "test": "web-scripts test",
+    "lint": "web-scripts lint",
+    "build": "web-scripts build",
+    "commit": "web-scripts commit",
+    "release": "web-scripts release",
+    "format": "web-scripts format",
+    "docs": "techdocs",
+    "prepublishOnly": "$npm_execpath run build"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "web-scripts commitmsg",
+      "pre-commit": "web-scripts precommit"
+    }
+  },
+  "devDependencies": {
+    "@spotify/web-scripts": "^10.0.1"
+  },
+  "release": {
+    "extends": "@spotify-internal/semantic-release-config-tingle"
+  },
+  "dependencies": {
+    "airtable": "^0.11.1",
+    "actionhero": "^27.3.0",
+    "@grouparoo/core": "^0.7.4"
+  }
+}
