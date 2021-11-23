@@ -13,7 +13,7 @@ export class Plugins extends Initializer {
   async initialize() {
     plugin.registerPlugin({
       name: packageJSON.name,
-      icon: '/public/@spotify-internal/airtable/airtable.png',
+      icon: '/public/@bsegal/airtable/airtable.png',
       templates: [],
       apps: [
         {

@@ -19,7 +19,6 @@
     "commit": "web-scripts commit",
     "release": "web-scripts release",
     "format": "web-scripts format",
-    "docs": "techdocs",
     "prepublishOnly": "$npm_execpath run build"
   },
   "husky": {
@@ -30,9 +29,6 @@
   },
   "devDependencies": {
     "@spotify/web-scripts": "^10.0.1"
-  },
-  "release": {
-    "extends": "@spotify-internal/semantic-release-config-tingle"
   },
   "dependencies": {
     "airtable": "^0.11.1",

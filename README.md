@@ -45,7 +45,7 @@ Where do we get credentials for Airtable?
 ## Usage
 
 ```sh
-yarn add @spotify-internal/grouparoo-airtable-plugin
+yarn add @bsegal/grouparoo-airtable-plugin
 ```
 
 ## Contributing
